@@ -18,6 +18,9 @@ jobs:
 
             - name: requirement setup
               run: pip install -r requirements.txt
+
+            - name: code audit
+              run: pip audit
               
             - name: run app
               run: echo "app running success"
