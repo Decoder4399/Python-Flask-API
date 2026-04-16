@@ -1,0 +1,23 @@
+name: CI-Pipeline
+
+on:
+    push:
+        branches: [mqain]
+
+jobs:
+    CI:
+        runs-on: ubintu-latest
+        steps:
+            - name: code checkout
+              uses: actions/checkout@v5
+
+            - name: python setup
+              uses: actions/setup-python@v6
+              with:
+                python-version: '3.10'
+
+            - name: requirement setup
+              run: pip install -r requirements.txt
+              
+            - name: run app
+              run: echo "app running success"
