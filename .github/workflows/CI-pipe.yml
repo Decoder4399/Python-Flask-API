@@ -20,7 +20,7 @@ jobs:
               run: pip install -r requirements.txt
 
             - name: code audit
-              run: pip audit
+              run: pip-audit
               
             - name: run app
               run: echo "app running success"
