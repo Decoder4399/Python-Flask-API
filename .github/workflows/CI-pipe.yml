@@ -6,7 +6,7 @@ on:
 
 jobs:
     CI:
-        runs-on: ubantu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: code checkout
               uses: actions/checkout@v5
